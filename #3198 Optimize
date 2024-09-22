@@ -1,0 +1,20 @@
+void nule(std::vector<int> &v)
+{
+    int zr=0;
+    std::vector<int>a;
+    for(int i=0;i<v.size();i++)
+    {
+        if(v[i])
+        {
+            a.push_back(v[i]);
+        }
+        else
+        {
+            zr++;
+        }
+    }
+    while(zr--){
+        a.push_back(0);
+    }
+    v=a;
+}
